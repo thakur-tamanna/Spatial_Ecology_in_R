@@ -1,5 +1,6 @@
 # Spatial Ecology in R
 Repo for the course
+
 <img width="700" height="700" alt="buzzfeed-listicle-scatterplot" src="https://github.com/user-attachments/assets/f7dd21bb-2dcd-4f9b-a29f-0191331c3245" />
 
 ## Course description
