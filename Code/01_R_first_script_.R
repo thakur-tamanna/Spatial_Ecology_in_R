@@ -1,7 +1,7 @@
 # Script for using R
 
 # Operation
-2+3
+2 + 3
 # an object
 
 samuele <- 2+3
@@ -28,5 +28,25 @@ elisa <- c(100, 80, 50, 20, 10) # an array of human deaths due to a disease
 # changing the point character
 plot(matteo, elisa, pch=9)
 
+# character exaggeration
+plot(matteo, elisa, pch=9, cex=2)
 
+# changing the colour
+plot(matteo, elisa, pch=9, cex=2, col="blue")
+plot(matteo, elisa, pch=9, cex=2, col="chartreuse3")
 
+# changing the labels
+plot(matteo, elisa, pch=9, cex=2, col="chartreuse3", xlab="number of mammals", ylab="number of human deaths")
+
+plot(matteo, elisa, pch=9, cex=2, col="chartreuse3", xlab="number of mammals", ylab="number of human deaths", cex.axis=2)
+# long function
+plot(matteo,
+     elisa,
+     pch=19,
+     cex=2,
+     col="maroon2",
+     xlab="number of mammals",
+     ylab="number of human deaths",
+     
+     
+    
