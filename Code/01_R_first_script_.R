@@ -47,6 +47,9 @@ plot(matteo,
      col="maroon2",
      xlab="number of mammals",
      ylab="number of human deaths",
+     cex.axis=2,
+     cex.lab=2)
+
      
      
     
