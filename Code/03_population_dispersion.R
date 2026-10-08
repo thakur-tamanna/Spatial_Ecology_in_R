@@ -17,3 +17,7 @@ rana
 
 # Plotting the data
 plot(rana)
+
+# Installing packages
+install.packages("vegan")
+install.packages("overlap")
