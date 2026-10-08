@@ -94,4 +94,5 @@ par(mfrow=c(2,1))
 plot(densitymap, col= cl10)
 plot(densitymap, col= cl100)
 
-# R 
+# R colors are here:
+# https://r-charts.com/colors/
