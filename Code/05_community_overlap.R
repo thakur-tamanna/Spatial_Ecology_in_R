@@ -48,18 +48,25 @@ summary(macaque) #lazy method
 # Exercise: make the density plot of the macaque
 macaquetime <- macaque$Timecirc
 densityPlot(macaquetime)
-# Fucked down here
 
 # Overlap the two distributions
-overlapPlot(tigertime, macaquetime) 
+overlapPlot(tigertime, macaquetime)
 
 # Changing the graph
-overlapPlot(tigertime, macaquetime, linetype= c(3,1))
+overlapPlot(tigertime, macaquetime, linetype=c(3,1))
 
-# Changing the line colours
-overlapPlot(tigertime,
-            macaquetime,
-            linetype= c(3,1),
-            linecol=c("cyan", "coral"
-                      )
+# Changing the line colors
+overlapPlot(tigertime, 
+            macaquetime, 
+            linetype=c(3,1),
+            linecol=c("cyan3", "coral")
+           )
+
+# Changing the overlap color
+overlapPlot(tigertime, 
+            macaquetime, 
+            linetype=c(3,1),
+            linecol=c("cyan3", "coral"),
+            olapcol="deeppink"
+           )
             
