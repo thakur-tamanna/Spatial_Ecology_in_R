@@ -67,16 +67,20 @@ amIpositive(98)
 
 # Considering all the potential cases
 amIpositive <- function(x){
-if(x>0){
-print("This number is positive, are you drunk?")
+  if(x>0){
+    print("This number is positive, are you drunk?")
   }
-else if(x<0){
-print("This number is negative, idiot!")
+  else if(x<0){
+    print("This number is negative, idiot!")
   }
-else if {
-print("Zero is nor positive neither negative")
+  else{
+    print("Zero is nor positive neither negative")
   }
 }
+
+amIpositive(98)
+amIpositive(-5)
+amIpositive(0)
 
 # Developing for loops
 loop <- function(){
