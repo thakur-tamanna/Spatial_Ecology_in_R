@@ -22,3 +22,10 @@ library(remotes)
 install_github("ducciorocchini/imageRy")  #github account and package
 ```
 During the installation don't update the previous packages
+
+Write: 
+```
+library(imageRy)
+```
+
+to check the package has been installed 
