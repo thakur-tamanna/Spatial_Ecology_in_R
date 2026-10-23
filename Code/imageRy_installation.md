@@ -12,6 +12,7 @@ Hence:
 ### 1. Install remotes
 
 ```
+library(remotes)
 install.packages("remotes")
 ```
 
