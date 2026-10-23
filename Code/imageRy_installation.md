@@ -12,13 +12,13 @@ Hence:
 ### 1. Install remotes
 
 ```
-library(remotes)
 install.packages("remotes")
 ```
 
 ### 2. Install imageRy from github
 
 ```
+library(remotes)
 install_github("ducciorochini/imageRy")  #github account and package
 ```
 
