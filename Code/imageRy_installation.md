@@ -19,6 +19,6 @@ install.packages("remotes")
 
 ```
 library(remotes)
-install_github("ducciorochini/imageRy")  #github account and package
+install_github("ducciorocchini/imageRy")  #github account and package
 ```
 
