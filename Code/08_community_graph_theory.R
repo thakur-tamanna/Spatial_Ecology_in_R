@@ -25,5 +25,8 @@ graph <- graph_from_data_frame(interactions, vertices = data.frame(name = specie
 plot(graph)
 
 
+# install_github("accountname/nameofthepackage")
+# R alternative are : remotes, devtools available in R
+
 
 
