@@ -31,7 +31,7 @@ plot(b2, col=cl)
 plot(b3, col=cl)
 
 # the multiframe from the CRAN is not properly working, so use the GitHub version:
-duccio <- function(x,y){
+tamanna <- function(x,y){
    par(mfrow=c(x,y))
    }
 
