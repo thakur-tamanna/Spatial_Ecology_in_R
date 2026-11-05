@@ -52,12 +52,12 @@ plot(b4)
 plot(b8)
 
 # build your own function for plotting
-duccio <- function(x,y){
+tamanna <- function(x,y){
   par(mfrow=c(x,y))
   }
 
 # Exercise: with the function duccio, build a multiframe of 2 rows and 2 columns and plot all the imported data
-duccio(2,2)
+tamanna(2,2)
 plot(b2)
 plot(b3)
 plot(b4)
@@ -67,7 +67,7 @@ plot(b8)
 # b2 b3
 # b2 b8
 
-duccio(1,2)
+tamanna(1,2)
 plot(b2,b3)
 plot(b2,b8)
 
@@ -87,7 +87,7 @@ im.plotRGB(sent, r=4, g=3, b=2, title='false color')
 im.plotRGB(sent, r=3, g=4, b=2, title='false color')
 im.plotRGB(sent, r=3, g=2, b=4, title='false color')
 
-duccio(2,2)
+tamanna(2,2)
 im.plotRGB(sent, r=3, g=2, b=1, title='natural color')
 im.plotRGB(sent, r=4, g=3, b=2, title='false color')
 im.plotRGB(sent, r=3, g=4, b=2, title='false color')
