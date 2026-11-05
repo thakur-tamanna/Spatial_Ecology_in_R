@@ -95,3 +95,4 @@ im.plotRGB(sent, r=3, g=2, b=4, title='false color')
 
 
 im.plotRGB(x, r, g, b, title = "")
+
