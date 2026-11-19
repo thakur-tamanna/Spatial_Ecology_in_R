@@ -3,6 +3,8 @@
 #packages
 library(terra)
 library(imageRy)
+library(viridis)
+
 # Linux
 setwd("~/Downloads")
 
