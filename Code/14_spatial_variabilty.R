@@ -65,3 +65,62 @@ sdNIR <- focal(sent[[1]], w=3, fun="sd")
 stacksd <- c(sent[[1]], sdNIR)
 plot(stacksd, col=cividis(100))
 plot(stacksd)
+
+# Exercise: calculate standard deviation for:
+# 7*7 pixels
+# 13*13 pixels
+# And make a stack of all the data: original, 3*3, 7*7, 13*13
+# rename the inner layers of the stack 
+sdNIR7 <- focal(sent[[1]], w=7, fun="sd")
+sdNIR13 <- focal(sent[[1]], w=13, fun="sd")
+stacksd <- c(sent[[1]], sdNIR, sdNIR7, sdNIR13)
+
+names(stacksd) <- c("Original", "sd_3", "sd_7", "sd_13")
+stacksd
+plot(stacksd, col= plasma(100))
+
+# Measuring the variability of the whole original image
+
+sentsd <- focal(sent, w=7, fun="sd")
+
+# layer 1 # NIR
+# layer 2 # red
+# layer 3 # green
+
+# The output image has three layers:
+# hypothesis: terra is calculating the standard deviation on every single layer
+# Test: plotting the NIR sd v/s the sd of the first layer of sent
+
+teststack <- c(sdNIR7, sentsd[[1]])
+plot(teststack)
+
+# Scatterplot
+plot(sdNIR7, sentsd[[1]])
+
+#  The correlation could be done among vectors
+x <- values(sdNIR7)
+y <- values(sentsd[[1]])
+cor(x, y, use= "complete.obs")
+
+# Since cor=1, the two data are the same!
+
+# Loop
+sdNIR <- list()
+
+for (w in 1:27) {
+  if (w %% 2 == 1 && w > 1) {
+    sdNIR[[paste0("w", w)]] <- focal(
+      sent[[1]],
+      w = matrix(1, nrow = w, ncol = w),
+      fun = "sd"
+    )
+  }
+}
+
+# Changing the list to a raster
+sdNIR_stack <- rast(sdNIR)
+names(sdNIR_stack) <- names(sdNIR)
+
+plot(sdNIR_stack)
+
+
